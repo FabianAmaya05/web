@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Store - Página Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Establecer la fuente global */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo para el menú superior */
+        .header {
+            background-color: #1c1c28;
+            padding: 10px 0;
+        }
+
+        .header .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #6c63ff;
+        }
+
+        /* Sección de Introducción */
+        .intro-section {
+            padding: 40px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .intro-section p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Sección de productos */
+        .product-section {
+            padding: 40px 0;
+            background-color: #ffffff;
+        }
+
+        .product-section .product-card {
+            margin: 15px 0;
+        }
+
+        /* Sección de video presentación */
+        .video-section {
+            padding: 40px 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Sección de Avatar */
+        .avatar-section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .avatar-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c28;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">FUTBOL STORE</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="juego.html">Juego</a></li>
+                    <li><a href="appinventor.html">App Inventor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Bienvenidos a Futbol Store</h2>
+            <p>En Futbol Store, ofrecemos los mejores productos para los amantes del fútbol. Desde balones de alta calidad hasta zapatillas y camisetas diseñadas para mejorar tu rendimiento en el campo. ¡Explora nuestra tienda y encuentra lo que necesitas para llevar tu juego al siguiente nivel!</p>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="product-section text-center">
+        <div class="container">
+            <h2 class="mb-4">Nuestros Productos</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card" style="width: 18rem;">
+                        <img src="img/im3.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Balón de Fútbol</h5>
+                            <p class="card-text">Balón de alta calidad para jugar al fútbol. Ideal para entrenamientos y partidos.</p>
+                            <a href="#" class="btn btn-primary">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card" style="width: 18rem;">
+                        <img src="img/im8.jpeg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatillas de Fútbol</h5>
+                            <p class="card-text">Zapatillas deportivas diseñadas para una mayor tracción en el campo de fútbol.</p>
+                            <a href="#" class="btn btn-primary">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card" style="width: 18rem;">
+                        <img src="img/im7.jpg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta de Fútbol</h5>
+                            <p class="card-text">Camiseta de alta calidad para jugadores de fútbol, cómoda y ligera.</p>
+                            <a href="#" class="btn btn-primary">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Video Presentación -->
+    <section class="video-section text-center">
+        <div class="container">
+            <h2 class="mb-4">Video de Presentación Animoto</h2>
+            <p>Este video presenta una colección destacada de artículos deportivos, enfocándose en accesorios y uniformes para futbolistas y aficionados. A lo largo del video, se muestran diferentes productos esenciales para mejorar el rendimiento en el campo, incluyendo calzado, balones y equipo de entrenamiento. ¡Todo lo necesario para vivir la pasión del fútbol al máximo!</p>
+        
+            <iframe id="vp1rlb0X" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1731801134&f=rlb0XD5nHo0g4ThWZKDVlA&d=0&m=p&r=360p+720p&volume=100&start_res=720p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Avatar -->
+    <section class="avatar-section">
+        <div class="container">
+            <h2 class="mb-4">Conoce a Nuestro Equipo</h2>
+            <iframe width="432" height="243" src="https://app.heygen.com/embeds/17a881381b4f4713a80d8f5939fcc115" title="HeyGen video player" frameborder="0" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+            <p>¡Este es nuestro avatar de equipo! Estamos listos para ayudarte con lo que necesites.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Futbol Store. Todos los derechos reservados.</p>
+            <p class="mb-0">Fabian Amaya B192</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

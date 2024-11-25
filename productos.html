@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Fútbol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Establecer la fuente global */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Esto asegura que el contenido ocupe al menos toda la altura de la pantalla */
+        }
+
+        /* Estilo para el menú superior */
+        .header {
+            background-color: #1c1c28; /* Color de fondo oscuro para el menú */
+            padding: 10px 0;
+        }
+
+        .header .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #6c63ff;
+        }
+
+        .active {
+            color: #6c63ff;
+        }
+
+        /* Sección Productos */
+        section {
+            padding: 40px 0;
+            flex-grow: 1; /* Hace que esta sección ocupe el espacio restante */
+        }
+
+        .product-card {
+            margin-bottom: 20px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #333333;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #1c1c28; /* Fondo oscuro para el footer */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">FUTBOL STORE</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="juego.html">Juego</a></li>
+                    <li><a href="appinventor.html">App Inventor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Productos -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-4">Productos de Fútbol</h1>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/im1.jpg" class="card-img-top" alt="Balón de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Balón de Fútbol Profesional</h5>
+                            <p class="card-text">Un balón de alta calidad para jugadores profesionales. Diseñado para ofrecer un rendimiento excepcional en el campo.</p>
+                            <p class="price">$29.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/im2.jpg" class="card-img-top" alt="Botas de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Botas de Fútbol Adidas</h5>
+                            <p class="card-text">Botas de fútbol Adidas diseñadas para un agarre y velocidad superior en el campo. Disponibles en varias tallas.</p>
+                            <p class="price">$79.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/im3.jpg" class="card-img-top" alt="Camiseta de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta de Fútbol Oficial</h5>
+                            <p class="card-text">Camiseta de fútbol de edición limitada, perfecta para fanáticos del deporte. Con un diseño moderno y elegante.</p>
+                            <p class="price">$49.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Producto 4 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/a1.jpg" class="card-img-top" alt="Guantes de Portero">
+                        <div class="card-body">
+                            <h5 class="card-title">Guantes de Portero Nike</h5>
+                            <p class="card-text">Guantes de portero de alta calidad para un agarre excepcional. Disponibles en varias tallas.</p>
+                            <p class="price">$39.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/a4.jpg" class="card-img-top" alt="Espinilleras de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Espinilleras de Fútbol</h5>
+                            <p class="card-text">Espinilleras para una protección máxima durante el juego. Ligeras y cómodas.</p>
+                            <p class="price">$19.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm">
+                        <img src="img/a8.jpg" class="card-img-top" alt="Bolsa de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa de Fútbol Nike</h5>
+                            <p class="card-text">Bolsa espaciosa para almacenar tu equipo de fútbol de manera segura. Con múltiples compartimentos.</p>
+                            <p class="price">$24.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Futbol Store. Todos los derechos reservados.</p>
+            <p class="mb-0">Fabian Amaya B192</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

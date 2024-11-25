@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicar fondo gris claro a toda la página */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcdcdc; /* Fondo gris claro */
+        }
+
+        .header {
+            background-color: #1c1c28;
+            padding: 10px 0;
+        }
+
+        .header .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #6c63ff;
+        }
+
+        .active {
+            color: #6c63ff;
+        }
+
+        section {
+            padding: 40px 0;
+            background-color: #ffffff; /* Fondo blanco para la sección de contacto */
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        footer {
+            background-color: #1c1c28;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .contact-form button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #5752f0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú superior -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">FUTBOL STORE</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="juego.html">Juego</a></li>
+                    <li><a href="appinventor.html">App Inventor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Contacto -->
+    <section class="py-5">
+        <div class="container">
+   
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Envíanos un Mensaje</h2>
+                            <form class="contact-form" action="#" method="POST">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Futbol Store. Todos los derechos reservados.</p>
+            <p class="mb-0">Fabian Amaya B192</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
